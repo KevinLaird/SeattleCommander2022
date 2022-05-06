@@ -1,0 +1,83 @@
+//background gradients
+
+@mixin link-reset{
+    &,
+    &:link,
+    &:visited{
+        text-decoration: none;
+        position: relative;
+    }
+}
+
+@mixin default-button-hover{
+    color: $color-primary-1;
+    background-color: $color-default;
+    transform: translate(-2px, -2px);
+    box-shadow: (5px 5px 0px 0px $color-primary-2);
+}
+
+@mixin center-horizontal-vertical{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin border-top-radius-default{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+@mixin border-bottom-radius-default{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+@mixin border-bottom-divide{
+    border-bottom: rgba($color-primary, .9) solid 3px;  
+}
+
+@mixin border-bottom-divide-padding{
+    @include border-bottom-divide;
+    padding-bottom: 3.7rem;
+}
+
+
+//MEDIA QUERIES
+@mixin respond($breakpoint){
+    @if $breakpoint == xs{
+        @media only screen and (max-width: 31.25em) {@content}; //500px
+    }
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 37.5em) {@content};  //600px    
+    }
+    @if $breakpoint == md {
+        @media only screen and (max-width: 56.25em) {@content};   //1000px
+    }
+    @if $breakpoint == lg {
+        @media only screen and (max-width: 75em) {@content};  //1200px  
+    }
+    @if $breakpoint == xl {
+        @media only screen and (min-width: 112.5em) {@content};  //1800px
+    } 
+}
+
+
+//not hovers
+
+@mixin not-hover--grayscale{
+    &:hover > *:not(:hover){
+        filter: grayscale(100%);
+        transform: scale(.95)
+    }
+}
+@mixin not-hover--opacity{
+    &:hover > *:not(:hover){
+        opacity: .8;
+        transform: scale(.95)
+    }
+}
+
+
+
+//Gradients

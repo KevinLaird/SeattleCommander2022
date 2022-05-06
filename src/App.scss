@@ -1,0 +1,14 @@
+.App {
+  &-container {
+    position: relative;
+    min-height: 100vh;
+    &--content {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      margin: 3rem;
+      max-width: 50%;
+    }
+  }
+
+}

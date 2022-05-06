@@ -1,0 +1,59 @@
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.style-2{
+    font-family: 'Poppins';
+}
+
+h1, h2, h3, h4{
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+h1{
+    font-size: 3.6rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+a {
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.body{
+    &-1{
+        font-size: 1.6rem;
+    }
+    &-2{
+        font-size: 1.4rem;
+    }
+    &-3{
+        font-size: 1.2rem;
+    }
+}
+
+.title {
+    padding: 1.5rem 2rem;
+    background-color: $color-primary-1;
+    width: fit-content;
+    box-shadow: .7rem .7rem $color-primary-3;
+    color: $color-default;
+    overflow: none;
+}
+

@@ -1,0 +1,27 @@
+.btn {
+  transition: all .2s;
+  padding: 1rem 1.5rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  &--default {
+    color: inherit;
+    &:hover {
+      color: $color-primary-1;
+      background-color: $color-default;
+      transform: translate(-2px, -2px);
+      box-shadow: (5px 5px 0px 0px $color-primary-2);
+    }
+  }
+  &--1 {
+    color: $color-default;
+    background-color: $color-primary-1;
+    &:hover {
+      background-color: $color-default;
+      color: $color-primary-1;
+      transform: translate(-2px, -2px);
+      box-shadow: (5px 5px 0px 0px $color-primary-2);
+    }
+  }
+}

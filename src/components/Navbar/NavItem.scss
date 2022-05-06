@@ -1,0 +1,16 @@
+@import "../../assets/styles/abstracts/variables";
+@import "../../assets/styles/abstracts/mixins";
+
+.NavItem {
+  &-link {
+    color: inherit;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all .2s;
+    padding: 1rem 1.5rem;
+    display: block;
+    &:hover {
+      @include default-button-hover;
+    }
+  }
+}

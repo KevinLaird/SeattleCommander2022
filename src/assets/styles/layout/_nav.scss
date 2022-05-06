@@ -1,0 +1,26 @@
+.nav{
+    color: $color-default;
+    display: flex;
+    line-height: 1;
+    &-box{
+        margin: 1rem;
+        align-items: center;
+        & > *{
+            padding: 5px
+        }
+    }
+    &__logo{
+
+        a{
+            line-height: .7;
+        }
+    }
+    &__header{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.header{
+
+}

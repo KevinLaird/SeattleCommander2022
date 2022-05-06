@@ -1,0 +1,21 @@
+.footer{
+    font-size: 1rem;
+    color: $color-default;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    &-box{
+        display: flex;
+        justify-content: center;
+        background-color: $color-accent-2;
+        padding: 1.5rem;
+
+        p{
+            margin-bottom: 0;
+        }
+    }
+    &-title{
+        font-weight: 600;
+    }
+}
