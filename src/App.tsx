@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.scss';
-import './assets/styles/main.scss';
+import './css/main.scss';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Watermark from './components/Watermark/Watermark';
