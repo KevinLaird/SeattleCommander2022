@@ -1,8 +1,7 @@
 @import "../../css/abstracts/variables";
 @import "../../css/abstracts/mixins";
 
-.NavItem {
-  &-link {
+.navItem {
     color: inherit;
     letter-spacing: 2px;
     text-decoration: none;
@@ -12,5 +11,4 @@
     &:hover {
       @include default-button-hover;
     }
-  }
 }

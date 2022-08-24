@@ -1,9 +1,13 @@
 import React from 'react';
-import './NavBrand.scss';
+import styles from './NavBrand.module.scss';
 
 const NavBrand = ({ link = '#' }): JSX.Element => (
-  <a className="NavBrand-link" href={link}>
-    <img className="NavBrand" src="./assets/images/logo.svg" alt="logo" />
+  <a className={styles.brandLink} href={link}>
+    <img
+      className={styles.brand}
+      src="./assets/images/logo.svg"
+      alt="logo"
+    />
   </a>
 );
 
