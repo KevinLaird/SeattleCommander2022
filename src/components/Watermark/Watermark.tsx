@@ -1,8 +1,8 @@
 import React from 'react';
-import './Watermark.scss';
+import styles from './Watermark.module.scss';
 
 const Watermark = (): JSX.Element => (
-  <div className="Watermark" />
+  <div className={styles.watermark} />
 );
 
 export default Watermark;

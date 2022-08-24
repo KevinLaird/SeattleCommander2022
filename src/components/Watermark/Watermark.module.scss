@@ -1,0 +1,19 @@
+@import '../../css/abstracts/mixins';
+
+.watermark {
+  position: absolute;
+  z-index: -50;
+  min-width: 100%;
+  min-height: 90%;
+  background: url(../../../public/assets/images/logo-watermark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 55rem -10rem;
+  background-size: 1200px;
+  @include respond(lg) {
+    background-position: 10rem 3rem;
+  }
+  @include respond(md) {
+    display: none;
+  }
+}
