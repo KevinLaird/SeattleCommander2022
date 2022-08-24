@@ -1,0 +1,21 @@
+@import "../../css/abstracts/variables";
+@import "../../css/abstracts/mixins";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 50;
+  background-color: $color-primary-1;
+  padding: 1rem;
+
+}
+
+.items { 
+  display: inherit;
+  list-style-type: none;
+  font-size: 1.2rem;
+  @include respond(md) {
+    font-size: 1rem;
+  }
+}
