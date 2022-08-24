@@ -2,10 +2,10 @@
 @import "../../css/abstracts/mixins";
 
 .footer {
-    font-size: 1rem;
+    font-size: 2rem;
     color: $color-default;
-    @include respond(sm) {
-        margin-top: 0;
+    @include respond(xs) {
+        font-size: 1.6rem;
     }
 }
 
@@ -13,12 +13,15 @@
     display: flex;
     justify-content: center;
     background-color: $color-accent-2;
-    padding: 1.5rem;
+    padding: 3.5rem;
+    @include respond(xs) {
+        padding: 2rem;
+    }
     p {
         margin-bottom: 0;
     }
 }
 
 .copyright {
-    font-weight: 600;
+    font-weight: 700;
 }

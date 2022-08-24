@@ -26,7 +26,6 @@
     background-color: $color-primary-1;
     
     &:hover {
-      animation: none;
       background-color: $color-default;
       color: $color-primary-1;
       transform: translate(-2px, -2px);
@@ -38,7 +37,6 @@
     background-color: $color-default;
     
     &:hover {
-      animation: none;
       background-color: $color-primary-1;
       color: $color-default;
       transform: translate(-2px, -2px);

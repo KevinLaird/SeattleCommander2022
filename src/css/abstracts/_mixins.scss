@@ -45,26 +45,11 @@
 
 //MEDIA QUERIES
 @mixin respond($breakpoint){
-    // @if $breakpoint == xs{
-    //     @media only screen and (max-width: 31.25em) {@content}; //500px
-    // }
-    // @if $breakpoint == sm {
-    //     @media only screen and (max-width: 37.5em) {@content};  //600px    
-    // }
-    // @if $breakpoint == md {
-    //     @media only screen and (max-width: 56.25em) {@content};   //1000px
-    // }
-    // @if $breakpoint == lg {
-    //     @media only screen and (max-width: 75em) {@content};  //1200px  
-    // }
-    // @if $breakpoint == xl {
-    //     @media only screen and (min-width: 112.5em) {@content};  //1800px
-    // } 
     @if $breakpoint == xxs{
-        @media only screen and (max-width: 280px) {@content}; // fold phones
+        @media only screen and (max-width: 320px) {@content}; // fold phones
     }
     @if $breakpoint == xs{
-        @media only screen and (max-width: 380px) {@content}; // phones
+        @media only screen and (max-width: 420px) {@content}; // phones
     }
     @if $breakpoint == sm {
         @media only screen and (max-width: 600px) {@content}; // portrait tablets || lg phones
