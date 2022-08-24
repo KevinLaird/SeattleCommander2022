@@ -62,3 +62,18 @@
         opacity: 1;
     }
 }
+
+@keyframes hueSubtle { 
+    0% {
+      filter: hue-rotate(0deg)
+      brightness(100%)
+    }
+    50% {
+      filter: hue-rotate(20deg)
+      brightness(110%)
+    }
+    100% {
+      filter: hue-rotate(0deg)
+      brightness(100%)
+    }
+  }
