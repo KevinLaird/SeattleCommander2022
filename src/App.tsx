@@ -7,7 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 const App = (): JSX.Element => {
   const discordLink = 'https://discord.com/invite/EAMvygbY9c';
   return (
-    <div className={styles.container}>
+    <div className={styles.appContainer}>
       <Navbar />
       <div className={styles.flexContainer}>
         <div className={styles.contentContainer}>
