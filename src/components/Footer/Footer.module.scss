@@ -1,0 +1,24 @@
+@import "../../css/abstracts/variables";
+@import "../../css/abstracts/mixins";
+
+.footer {
+    font-size: 1rem;
+    color: $color-default;
+    @include respond(sm) {
+        margin-top: 0;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: $color-accent-2;
+    padding: 1.5rem;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.copyright {
+    font-weight: 600;
+}

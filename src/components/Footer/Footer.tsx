@@ -1,10 +1,10 @@
 import React from 'react';
-import './Footer.scss';
+import styles from './Footer.module.scss';
 
 const Footer = (): JSX.Element => (
-  <footer className="footer">
-    <div className="footer-container">
-      <p className="footer-copyright">
+  <footer className={styles.footer}>
+    <div className={styles.container}>
+      <p className={styles.copyright}>
         {new Date().getFullYear()}
         {' '}
         Seattle Commander
