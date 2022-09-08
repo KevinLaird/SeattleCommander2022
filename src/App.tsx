@@ -23,7 +23,6 @@ const App = (): JSX.Element => {
             Join Now!
           </a>
         </div>
-
       </div>
       <Footer />
     </div>
